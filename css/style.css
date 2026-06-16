@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f7f1ea;
-    color: #2e2118;
+    background-color: #f4f9fc;
+    color: #1f2937;
 }
 
 .contenedor {
@@ -16,7 +16,7 @@ body {
 }
 
 .encabezado {
-    background-color: #4b2e20;
+    background-color: #0f4c81;
     color: white;
     padding: 20px 0;
 }
@@ -46,14 +46,14 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
-    background-color: #6f4631;
+    background-color: #1e88e5;
     padding: 10px 14px;
     border-radius: 8px;
 }
 
 .menu a:hover {
-    background-color: #d6a15f;
-    color: #2e2118;
+    background-color: #64b5f6;
+    color: #0f4c81;
 }
 
 .seccion {
@@ -61,7 +61,7 @@ body {
 }
 
 .presentacion {
-    background-color: #fff9f2;
+    background-color: #eaf6ff;
 }
 
 .presentacion-contenido {
@@ -80,11 +80,12 @@ body {
     width: 100%;
     max-width: 420px;
     border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .boton {
     display: inline-block;
-    background-color: #8b4f2f;
+    background-color: #0f4c81;
     color: white;
     text-decoration: none;
     padding: 12px 18px;
@@ -93,14 +94,11 @@ body {
 }
 
 .boton:hover {
-    background-color: #d6a15f;
-    color: #2e2118;
+    background-color: #1e88e5;
 }
 
-
-
 .promocion {
-    background-color: #ead8c3;
+    background-color: #d9efff;
 }
 
 .promocion-contenido {
@@ -112,17 +110,18 @@ body {
 }
 
 .boton-secundario {
-    background-color: #4b2e20;
+    background-color: #1565c0;
 }
 
 .contacto {
     background-color: white;
     padding: 30px;
     border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 .pie {
-    background-color: #2e2118;
+    background-color: #0f4c81;
     color: white;
     text-align: center;
     padding: 18px;
@@ -139,23 +138,33 @@ body {
     justify-content: center;
 }
 
-
 .tarjeta {
     background-color: white;
     width: 300px;
-   max-width: 100%;
-   paddin: 20px;
-   border-radius: 12px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.tarjeta h3{
+.tarjeta h3 {
     margin-top: 0;
+    color: #0f4c81;
 }
 
+.tarjeta img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.seccion h2 {
+    padding: 15px 0;
+    color: #0f4c81;
+}
 
 @media (max-width: 700px) {
-    .encabezado-contenido, 
-    .presentacion-contenido, 
+    .encabezado-contenido,
+    .presentacion-contenido,
     .promocion-contenido {
         flex-direction: column;
         text-align: center;
@@ -163,16 +172,11 @@ body {
 
     .menu {
         width: 100%;
+        justify-content: center;
     }
 
     .menu a {
-        with: 100%;
+        width: 100%;
+        text-align: center;
     }
-}
-.tarjeta img {
-    width: 100%;
-    border-radius: 12px;
-}
-.seccion h2 {
-    padding: 35px;
 }
