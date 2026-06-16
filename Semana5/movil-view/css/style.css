@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f1ea;
+    color: #2e2118;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.encabezado {
+    background-color: #4b2e20;
+    color: white;
+    padding: 20px 0;
+}
+
+.encabezado-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.encabezado h1 {
+    margin: 0;
+}
+
+.encabezado p {
+    margin: 5px 0 0;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    background-color: #6f4631;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    background-color: #d6a15f;
+    color: #2e2118;
+}
+
+.seccion {
+    padding: 50px 0;
+}
+
+.presentacion {
+    background-color: #fff9f2;
+}
+
+.presentacion-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.texto-presentacion {
+    flex: 1 1 320px;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #8b4f2f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #d6a15f;
+    color: #2e2118;
+}
+
+
+
+.promocion {
+    background-color: #ead8c3;
+}
+
+.promocion-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boton-secundario {
+    background-color: #4b2e20;
+}
+
+.contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.pie {
+    background-color: #2e2118;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+.pie p {
+    margin: 0;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+   max-width: 100%;
+   paddin: 20px;
+   border-radius: 12px;
+}
+
+.tarjeta h3{
+    margin-top: 0;
+}
+
+
+@media (max-width: 700px) {
+    .encabezado-contenido, 
+    .presentacion-contenido, 
+    .promocion-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu a {
+        with: 100%;
+    }
+}
+.tarjeta img {
+    width: 100%;
+    border-radius: 12px;
+}
+.seccion h2 {
+    padding: 35px;
+}
